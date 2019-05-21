@@ -1,9 +1,9 @@
 <div class="calc">
   <div class="calc-row result">
-    <div class="left">
+    <div class="left" [style.max-width]="'85%'" style="overflow-x:auto;">
       {{ result || 0 }}
     </div>
-    <div class="right">
+    <div class="right" [style.max-width]="'10%'">
       <button class="clear" (click)="btnClicked('C')" [disabled]="disabled">
        CLEAR
       </button>
